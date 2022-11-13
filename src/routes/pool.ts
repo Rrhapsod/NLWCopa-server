@@ -78,7 +78,7 @@ export async function poolRoutes(fastify: FastifyInstance) {
       }
       if (pool.Participant.length > 0) {
         return reply.status(400).send({
-          message: "Você já estś nesse bolão",
+          message: "Você já está neste bolão",
         });
       }
 

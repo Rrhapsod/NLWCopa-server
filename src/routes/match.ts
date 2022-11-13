@@ -5,7 +5,7 @@ import { authenticate } from "../plugins/authenticate";
 
 export async function matchRoutes(fastify: FastifyInstance) {
   fastify.get(
-    "/pools/:id/games",
+    "/pools/:id/matches",
     {
       onRequest: [authenticate],
     },
